@@ -1,10 +1,12 @@
 <template>
-    <ul class="contain flex justify-end gap-10 bg-gray-300 py-4">
-        <li class="h-5 w-5"><a href="" target="_blank" title="facebook" class="w-4 h-4 hover:w-5 hover:h-5 block socials facebook"></a></li>
-        <li class="h-5 w-5"><a href="" target="_blank" title="twitter" class="w-4 h-4 hover:w-5 hover:h-5 block socials twitter"></a></li>
-        <li class="h-5 w-5"><a href="" target="_blank" title="linkedin" class="w-4 h-4 hover:w-5 hover:h-5 block socials linkedin"></a></li>
-        <li class="h-5 w-5"><a href="" target="_blank" title="instagram" class="w-4 h-4 hover:w-5 hover:h-5 block socials instagram"></a></li>
-    </ul>
+    <div class="bg-blue-100">
+        <ul class="contain flex justify-end gap-10 bg-gray-300 py-4">
+            <li class="h-5 w-5"><a href="" target="_blank" title="facebook" class="w-4 h-4 hover:w-5 hover:h-5 block socials facebook"></a></li>
+            <li class="h-5 w-5"><a href="" target="_blank" title="twitter" class="w-4 h-4 hover:w-5 hover:h-5 block socials twitter"></a></li>
+            <li class="h-5 w-5"><a href="" target="_blank" title="linkedin" class="w-4 h-4 hover:w-5 hover:h-5 block socials linkedin"></a></li>
+            <li class="h-5 w-5"><a href="" target="_blank" title="instagram" class="w-4 h-4 hover:w-5 hover:h-5 block socials instagram"></a></li>
+        </ul>
+    </div>
 </template>
 
 <script>
