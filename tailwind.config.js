@@ -19,6 +19,13 @@ module.exports = {
         "theme-red": "#881d1d"
       }
     },
+    screens: {
+      "mobile-large":"540px",
+      "tablet": "640px",
+      "tablet-large":"768px",
+      "laptop": "1024px",
+      "full-screen": "1280px"
+    }
   },
   plugins: [],
 }

@@ -7,25 +7,8 @@
       <BannerSection :main="false"/>
       <CardSection />
       <FeatureSection />
-      <!-- BEST VOLUNTEER --><!-- HOW COULD YOU HELP TEMPLATE -->
       <ArticleListing :cta="true"/>
-
-      <!-- CONTACT BANNER -->
-      <div>
-        <!-- WILL FIGURE YOU OUT EVENTUALLY -->
-      </div>
-      
-      <!-- FOOTER -->
-      <div>
-        <div class="contain bg-gray-300 grid grid-cols-4">
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-          <div>test</div>
-          <div class="col-span-4">copywrite</div>
-        </div>
-      </div>
-
+      <FooterSection/>
   </div>
 </template>
 
@@ -36,6 +19,7 @@
   import ArticleListing from './components/ArticleListing.vue';
   import CardSection from './components/CardSection.vue';
   import FeatureSection from './components/FeatureSection.vue';
+  import FooterSection from './components/FooterSection.vue';
 
   export default {
     name: 'App',
@@ -45,7 +29,8 @@
       BannerSection,
       ArticleListing,
       CardSection,
-      FeatureSection
+      FeatureSection,
+      FooterSection
     }
 
   }

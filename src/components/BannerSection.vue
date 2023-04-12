@@ -1,10 +1,10 @@
 <template>
-    <section :class="main ? 'banner-main' : 'banner-secondary'" class="aspect-banner">
-        <div class="grid grid-cols-2 contain z-50 relative h-full">
+    <section :class="main ? 'banner-main' : 'banner-secondary'" class="banner full-screen:aspect-banner">
+        <div class="grid tablet:grid-cols-2 contain z-40 relative h-full">
             <div v-if="!main"></div>
-            <div class="flex flex-col justify-center h-full">
-                <h2 class="text-h1 font-bold text-white uppercase max-w-[60%]">Heading that takes up two lines</h2>
-                <p class="text-banner text-white max-w-[80%] pt-4 pb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsa libero natus ullam illum numquam? Vero repellendus, culpa quo, commodi error quibusdam fugiat nemo modi, qui adipisci delectus. Fugiat, accusamus!</p>
+            <div class="flex flex-col justify-center h-full py-10">
+                <h2 class="text-h2 laptop:text-h1 font-bold text-white uppercase laptop:max-w-[60%]">Heading that takes up two lines</h2>
+                <p class="text-p laptop:text-banner text-white laptop:max-w-[80%] pt-4 pb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsa libero natus ullam illum numquam? Vero repellendus, culpa quo, commodi error quibusdam fugiat nemo modi, qui adipisci delectus. Fugiat, accusamus!</p>
                 <ThemeButton/>
             </div>
         </div>
@@ -41,7 +41,6 @@
     .banner-main::before{
         content:"";
         position: absolute;
-        width:60%;
         height: 100%;
         background-color: #881d1d;
         /* background-image:url("../assets/theme/background4.jpg"); */
@@ -49,6 +48,7 @@
         transform: skew(-30deg);
         transform-origin:top;
         z-index: 10;
+        @apply w-[60%] tablet:w-[60%]
     }
     .banner-main::after{
         content:"";
@@ -62,6 +62,8 @@
         transform-origin:top;
         top: 0;
         z-index: 5;
+        @apply hidden tablet:block
+
     }
 
     .banner-secondary{
@@ -82,5 +84,6 @@
         background-size: 200px;
         transform-origin:top;
         z-index: 10;
+        @apply hidden tablet:block;
     }
 </style>

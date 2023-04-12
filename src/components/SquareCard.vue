@@ -13,11 +13,11 @@
             </div>
         </div>
         <div class="py-10 px-4">
-            <div class="flex justify-between py-6">
+            <div class="flex justify-between py-2 mobile-large:py-4 tablet:py-6">
                 <p class="p text-white font-bold">Raised: $300.00</p>
                 <p class="p text-white font-bold">Goal: $800.00</p>
             </div>
-            <p class="text-h4 text-white text-center w-3/4 m-auto pb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-p laptop:text-h4 text-white text-center w-3/4 m-auto pb-4 tablet:pb-10 laptop:pb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <ThemeButton class="m-auto" small="true"/>
         </div>
     </div>

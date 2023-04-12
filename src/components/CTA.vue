@@ -1,27 +1,32 @@
 <template>
-    <div class="bg-theme-red p-10 absolute bottom-0 w-full translate-y-1/2 grid grid-cols-2">
-        <div class="question grid bg-blue-500">
-            <p>phone</p>
-            <p class="text-h4 text-white leading-none">Do you have <br> a question</p>
-            <p class="text-h2 text-white font-bold">+0123 456 789</p>
+    <div class="bg-theme-red px-6 py-8 grid laptop:flex laptop:justify-between gap-4">
+        <div class="flex gap-y-4 gap-x-4 flex-wrap justify-center bg-red-50">
+            <p>ph</p>
+            <p>Do you have <br>a question?</p>
+            <p>+0123 456 789</p>
         </div>
-        <div class="grid grid-cols-2 bg-green-50">
-            <div>input</div>
-            <button>test</button>
+        <div class="email-form flex tablet:grid items-center justify-center gap-x-4 gap-y-4 flex-wrap bg-green-50">
+            <div class="h-10 rounded-full w-full laptop:w-[320px] bg-green-300">
+
+            </div>
+            <ThemeButton />
         </div>
     </div>
 </template>
 
 <script>
+    import ThemeButton from './ThemeButton.vue';
+
     export default {
-        name: "CTA"
+        name: "CTA",
+        components: {
+            ThemeButton
+        }
     }
 </script>
 
 <style scoped>
-    .question{
-        display:flex;
-        align-items: center;
-        gap:16px
+    .email-form{
+        grid-template-columns: 1fr auto;
     }
 </style>
