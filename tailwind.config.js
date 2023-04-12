@@ -7,6 +7,7 @@ module.exports = {
         'banner':'16/6'
       },
       fontSize: {
+        "h1-banner":["48px", "1.2"],
         h1: ["40px", "1.2"],
         h2: ["32px", "1.2"],
         h3: ["28px", "1.2"],

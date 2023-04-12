@@ -6,7 +6,7 @@
             class="w-full aspect-square object-cover object-center rounded-full border-8 border-white shadow-custom"
             >
             <p class="text-center uppercase font-bold text-h4 pt-4 pb-2">Lorem Ipsum</p>
-            <p class="text-center leading-none text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quidem, magnam ea ipsum nostrum earum libero, temporibus omnis repellendus</p>
+            <p class="text-center leading-none text-p text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quidem, magnam ea ipsum nostrum earum libero, temporibus omnis repellendus</p>
     </div>
 </template>
 

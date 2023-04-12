@@ -3,7 +3,7 @@
         <div class="grid tablet:grid-cols-2 contain z-40 relative h-full">
             <div v-if="!main"></div>
             <div class="flex flex-col justify-center h-full py-10">
-                <h2 class="text-h2 laptop:text-h1 font-bold text-white uppercase laptop:max-w-[60%]">Heading that takes up two lines</h2>
+                <h2 :class="main ? 'laptop:text-h1-banner' : 'laptop:text-h1'" class="text-h2  font-bold text-white uppercase laptop:max-w-[70%]">Heading that takes up two lines</h2>
                 <p class="text-p laptop:text-banner text-white laptop:max-w-[80%] pt-4 pb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ipsa libero natus ullam illum numquam? Vero repellendus, culpa quo, commodi error quibusdam fugiat nemo modi, qui adipisci delectus. Fugiat, accusamus!</p>
                 <ThemeButton/>
             </div>

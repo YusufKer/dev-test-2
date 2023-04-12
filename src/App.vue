@@ -30,7 +30,7 @@
       ArticleListing,
       CardSection,
       FeatureSection,
-      FooterSection
+      FooterSection,
     }
 
   }
