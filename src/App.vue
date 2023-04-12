@@ -1,27 +1,14 @@
 <template>
   <div class="max-w-[2400px] m-auto bg-red-100">
-      <!-- SOCIAL BAR -->
       <SocialBar />
-
-      <!-- NAV BAR -->
       <NavBar />
-      <!-- BANNER MAIN-->
-      <BannerSection />
-      <!-- HOW COULD YOU HELP -->
+      <BannerSection :main="true" />
       <ArticleListing />
-
-      <!-- BANNER SECONDARY-->
-      <BannerSection />
-
-      <!-- FEATURE CASUES-->
+      <BannerSection :main="false"/>
       <CardSection />
-
-      <!-- WHAT PEOPLE SAY-->
       <FeatureSection />
-
       <!-- BEST VOLUNTEER --><!-- HOW COULD YOU HELP TEMPLATE -->
-      <!-- HOW COULD YOU HELP -->
-      <ArticleListing />
+      <ArticleListing :cta="true"/>
 
       <!-- CONTACT BANNER -->
       <div>
