@@ -12,12 +12,12 @@
             </ul>
             <div class="tablet:hidden">
                 <div @click="mobileMenuOpen = !mobileMenuOpen" class="flex flex-col gap-2">
-                    <div class="w-8 h-1 bg-black"></div>
-                    <div class="w-8 h-1 bg-black"></div>
+                    <div :class="mobileMenuOpen && '-translate-x-4'" class="w-8 h-1 bg-black transition-transform duration-200"></div>
+                    <div :class="mobileMenuOpen && '-translate-x-2'" class="w-8 h-1 bg-black transition-transform duration-100"></div>
                     <div class="w-8 h-1 bg-black"></div>
                 </div>
             </div>
-            <ul @click="mobileMenuOpen = !mobileMenuOpen" :class="mobileMenuOpen ? 'block' : 'hidden'" class="tablet:hidden gap-4 laptop:gap-8 items-center absolute top-full right-0 bg-white px-4 py-2 z-50">
+            <ul @click="mobileMenuOpen = !mobileMenuOpen" :class="mobileMenuOpen ? 'opacity-1' : 'opacity-0'" class="transition-opacity duration-200 tablet:hidden gap-4 laptop:gap-8 items-center absolute top-full right-0 bg-white px-4 py-2 z-50">
                 <li class="min-w-[60px]"><a href="" title="link" class="text-nav">link</a></li>
                 <li class="min-w-[60px]"><a href="" title="link" class="text-nav">link</a></li>
                 <li class="min-w-[60px]"><a href="" title="link" class="text-nav">link</a></li>
