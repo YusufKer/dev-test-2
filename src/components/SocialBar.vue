@@ -17,7 +17,7 @@
 
 <style scoped>
     .backdrop{
-        /* background-image: url("../assets/theme/background3.jpg"); */
+        background-image: url("../assets/theme/background2.jpg");
         background-color: #222625;
         background-size: contain;
     }

@@ -16,7 +16,6 @@
                     <div class="w-8 h-1 bg-black"></div>
                     <div class="w-8 h-1 bg-black"></div>
                 </div>
-                
             </div>
             <ul @click="mobileMenuOpen = !mobileMenuOpen" :class="mobileMenuOpen ? 'block' : 'hidden'" class="tablet:hidden gap-4 laptop:gap-8 items-center absolute top-full right-0 bg-white px-4 py-2 z-50">
                 <li class="min-w-[60px]"><a href="" title="link" class="text-nav">link</a></li>

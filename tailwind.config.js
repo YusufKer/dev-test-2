@@ -17,7 +17,8 @@ module.exports = {
         p: ["16px", "1.4"]
       },
       colors:{
-        "theme-red": "#881d1d"
+        "theme-red": "#2e65a5",
+        "theme-yellow": "#f3ad00"
       }
     },
     screens: {

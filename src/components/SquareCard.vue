@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-theme-red">
+    <div class="bg-theme-red backdrop">
         <div class="aspect-video relative">
             <img 
-                src="https://media.istockphoto.com/id/1353379172/photo/cute-little-african-american-girl-looking-at-camera.jpg?s=612x612&w=0&k=20&c=RCOYytwS2nMGfEb80oyeiCcIiqMQu6wnTluAaxMBye4=" 
+                :src="require(`@/assets/featured/${url}`)" 
                 alt=""
             >
             <div class="progress-bar-outer bg-white w-[90%] h-12 rounded-full absolute bottom-0 translate-y-1/2 ml-[5%]">
@@ -37,12 +37,23 @@
                 default(){
                     return "0%";
                 }
+            },
+            url:{
+                type:String,
+                default(){
+                    return ""
+                }
             }
         }
     }
 </script>
 
 <style scoped>
+    .backdrop{
+        background-image: url("../assets/theme/background2.jpg");
+        background-color: #222625;
+        background-size: contain;
+    }
     .progress-bar-outer{
         display: grid;
         grid-template-columns: 1fr auto;

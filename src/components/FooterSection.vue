@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-900 py-8 tablet:py-10 laptop:py-20">
+    <footer class="bg-gray-900 backdrop py-8 tablet:py-10 laptop:py-20">
         <div class="contain footer-grid grid gap-4 tablet:grid-cols-2">
             <!-- column 1 -->
             <div>
@@ -23,12 +23,7 @@
             <div>
                 <p class="text-h4 text-white uppercase laptop:h-10 mb-4">Gallery</p>
                 <div class="gallery-peview grid w-fit gap-2">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
-                    <img src="" alt="" class="w-20 h-20 bg-red">
+                    <img v-for="index in 6" :key="index" :src="require(`@/assets/featured/gallery${index}.jpg`)" alt="" class="w-20 h-20 bg-red object-cover object-center">
                 </div>
             </div>
             <!-- column 4 -->
@@ -69,6 +64,11 @@
 </script>
 
 <style scoped>
+    .backdrop{
+        background-image: url("../assets/theme/background2.jpg");
+        background-color: #222625;
+        background-size: contain;
+    }
 
     .right-arrow{
         background-image: url("../assets/theme/ico_right-arrow.png");
@@ -84,7 +84,7 @@
     }
     @media (min-width:1024px){
         .footer-grid{
-            grid-template-columns: 1fr auto auto 1fr;
+            grid-template-columns: 1fr auto auto 500px;
         }
     }
     .gallery-peview{

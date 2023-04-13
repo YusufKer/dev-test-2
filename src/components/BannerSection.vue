@@ -42,7 +42,7 @@
         content:"";
         position: absolute;
         height: 100%;
-        background-color: #881d1d;
+        background-color: #f3ad00;
         /* background-image:url("../assets/theme/background4.jpg"); */
         background-size: 200px;
         transform: skew(-30deg);
@@ -55,7 +55,7 @@
         position: absolute;
         width:30%;
         height: 100%;
-        background-color: #222625;
+        background-color: #2e65a5;
         /* background-image:url("../assets/theme/background3.jpg"); */
         background-size: 200px;
         transform: skew(30deg);
@@ -79,11 +79,12 @@
         right: 0;
         width:55%;
         height: 100%;
-        background-color: #881d1d;
+        background-color: #f3ad00;
         /* background-image:url("../assets/theme/background4.jpg"); */
         background-size: 200px;
         transform-origin:top;
         z-index: 10;
+        
         @apply hidden tablet:block;
     }
 </style>

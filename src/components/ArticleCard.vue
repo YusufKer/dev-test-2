@@ -1,7 +1,7 @@
 <template>
     <div>
         <img 
-            src="https://media.istockphoto.com/id/1353379172/photo/cute-little-african-american-girl-looking-at-camera.jpg?s=612x612&w=0&k=20&c=RCOYytwS2nMGfEb80oyeiCcIiqMQu6wnTluAaxMBye4=" 
+            :src="imageUrl" 
             alt=""
             class="w-full aspect-square object-cover object-center rounded-full border-8 border-white shadow-custom"
             >
@@ -12,7 +12,20 @@
 
 <script>
     export default {
-        name: "ArticleCard"
+        name: "ArticleCard",
+        props:{
+            url:{
+                type:String,
+                default(){
+                    return "";
+                }
+            }
+        },
+        data(){
+            return{
+                imageUrl:require(`@/assets/featured/${this.url}.jpg`)
+            }
+        }
     }
 </script>
 

@@ -3,11 +3,11 @@
       <SocialBar />
       <NavBar />
       <BannerSection :main="true" />
-      <ArticleListing />
+      <ArticleListing :main="true"/>
       <BannerSection :main="false"/>
       <CardSection />
       <FeatureSection />
-      <ArticleListing :cta="true"/>
+      <ArticleListing :cta="true" :main="false"/>
       <FooterSection/>
   </div>
 </template>
@@ -32,6 +32,5 @@
       FeatureSection,
       FooterSection,
     }
-
   }
 </script>

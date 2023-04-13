@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-theme-red px-6 py-8 grid laptop:flex laptop:justify-between gap-4">
+    <div class="bg-theme-red px-6 py-8 grid laptop:flex laptop:justify-between gap-4 laptop:absolute laptop:bottom-0 laptop:translate-y-1/2 w-calc">
         <div class="flex gap-y-4 gap-x-4 flex-wrap justify-center items-center">
             <p class="phone-icon w-10 h-10"></p>
             <p class="text-p text-white leading-tight">Do you have <br>a question?</p>
@@ -27,6 +27,12 @@
 </script>
 
 <style scoped>
+    @media (min-width: 1024px){
+        .w-calc{
+        width:calc(100% - 32px)
+        }   
+    }
+
     .phone-icon{
         background-image: url("../assets/theme/ico_phone-white.png");
         background-size: contain;
