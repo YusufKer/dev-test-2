@@ -22,6 +22,7 @@ module.exports = {
       }
     },
     screens: {
+      "got-weed":"420px",
       "mobile-large":"540px",
       "tablet": "640px",
       "tablet-large":"768px",

@@ -4,7 +4,7 @@
             <h2 class="text-center text-h3 tablet:text-h2 text-white font-bold pb-10">WHAT PEOPLE SAY</h2>
             <div class="laptop:px-20 pb-10 tablet:pb-0">
                 <div class="quote bg-white rounded-3xl p-4 tablet:p-10">
-                    <p class="quotation-marks w-10 h-10"></p>
+                    <p class="quotation-marks w-10 h-10 col-span-2 got-weed:col-span-1"></p>
                     <p ref="fadeInOut" class="fadeInOut text-p tablet:text-h4">{{ quotes[activeQuote].quoteBody }}</p>
                     <p class="text-h4 tablet:text-h3 text-center col-span-2 text-theme-red font-bold">Lorem Ipsum <span class="text-black">| NGO</span></p>
                 </div>
@@ -69,7 +69,7 @@
     .backdrop{
         background-image: url("../assets/theme/background5.jpg");
         background-color: #222625;
-        background-size: contain;
+        background-size: cover;
     }
     .quotation-marks{
         background-image: url("../assets/theme/left-quotes-sign.png");

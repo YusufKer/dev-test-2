@@ -3,7 +3,7 @@
         <div class="contain footer-grid grid gap-4 tablet:grid-cols-2">
             <!-- column 1 -->
             <div>
-                <p class="text-h3 text-white uppercase font-bold laptop:h-10 mb-4">our mission</p>
+                <p class="text-h3 text-white uppercase font-bold laptop:min-h-10 mb-4">our mission</p>
                 <p class="text-p text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, libero sint! Porro, recusandae. Nulla, quam aliquid? Enim sunt quo voluptates excepturi aliquam necessitatibus reprehenderit soluta eum porro praesentium! Possimus, voluptatibus!</p>
                 <p class="text-p text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, libero sint! Porro, recusandae. Nulla, quam aliquid? Enim sunt quo voluptates excepturi aliquam necessitatibus.</p>
             </div>
